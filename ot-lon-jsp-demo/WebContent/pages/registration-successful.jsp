@@ -34,11 +34,42 @@
 		    <div class="pure-u-1-3">
 				<b>First Name:</b> <br /><br />
 				<%= person.getFirstName() %><br />
-				<br />
-				
+				<br />	
 				
 				<b>Last Name:</b> <br /><br />
 				<%= person.getLastName() %><br />
+				<br />
+				
+				<b>Birthdate:</b> <br /><br />
+				<%= person.getBirthDate() %><br />
+				<br />
+				
+				<b>Age:</b> <br /><br />
+				<%= person.getAge() %><br />
+				<br />
+				
+				<b>Gender:</b> <br /><br />
+				<%= person.getGender() %><br />
+				<br />
+				
+				<b>Address Line 1:</b> <br /><br />
+				<%= person.getAddressLine1() %><br />
+				<br />
+				
+				<b>Address Line 2:</b> <br /><br />
+				<%= person.getAddressLine2() %><br />
+				<br />
+				
+				<b>City:</b> <br /><br />
+				<%= person.getCity() %><br />
+				<br />
+				
+				<b>Country:</b> <br /><br />
+				<%= person.getCountry() %><br />
+				<br />
+				
+				<b>Mobile Number:</b> <br /><br />
+				<%= person.getMobileNumber() %><br />
 				<br />
 				
 			
