@@ -41,7 +41,3 @@ function checkFieldsIfNoError() {
 	
 	return isProceed;
 }
-
-function checkGenderIfSelected() {
-	
-}
