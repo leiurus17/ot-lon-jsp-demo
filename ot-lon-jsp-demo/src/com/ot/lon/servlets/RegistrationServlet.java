@@ -29,9 +29,6 @@ public class RegistrationServlet extends HttpServlet {
 		
 		request.setAttribute("person",  person);
 		
-		System.out.println(person.getFirstName());
-		System.out.println(person.getLastName());
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("pages/registration-successful.jsp");
 		
 		dispatcher.forward(request, response);
