@@ -43,7 +43,7 @@
 				
 				Gender:<br />
 				<label id="gender_error" style="display:none; color:#ff0000;">Please enter your gender properly.</label>
-				<input type="radio" name="age" id="age" value="Male" /> Male<br />
+				<input type="radio" name="age" id="age" value="Male" checked="checked" /> Male<br />
 				<input type="radio" name="age" id="age" value="Female" /> Female<br />
 				<input type="radio" name="age" id="age" value="Other" /> Other<br />
 				<br />
