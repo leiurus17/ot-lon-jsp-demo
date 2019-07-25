@@ -42,9 +42,9 @@
 				<input type="text" name="age" id="age" readonly required onchange="validateField(this.value, 'age_error', 'NUMERIC')" /><br /><br />
 				
 				Gender:<br />
-				<input type="radio" name="age" id="age" value="Male" checked="checked" /> Male<br />
-				<input type="radio" name="age" id="age" value="Female" /> Female<br />
-				<input type="radio" name="age" id="age" value="Other" /> Other<br />
+				<input type="radio" name="gender" id="gender" value="Male" checked="checked" /> Male<br />
+				<input type="radio" name="gender" id="gender" value="Female" /> Female<br />
+				<input type="radio" name="gender" id="gender" value="Other" /> Other<br />
 				<br />
 				
 				Address Line 1:<br />
