@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.ot.lon.models.Person;
 import com.ot.lon.services.RegistrationService;
 
+@WebServlet( name = "RegistrationServlet", urlPatterns = "/registration")
 public class RegistrationServlet extends HttpServlet {
 
 	/**
@@ -26,6 +28,9 @@ public class RegistrationServlet extends HttpServlet {
 		registrationService.savePersonToList(person);
 		
 		request.setAttribute("person",  person);
+		
+		System.out.println(person.getFirstName());
+		System.out.println(person.getLastName());
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("pages/registration-successful.jsp");
 		

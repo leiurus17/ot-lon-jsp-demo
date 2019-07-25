@@ -24,7 +24,7 @@
 		    
 		    <div class="pure-u-1-3">
 		   		<b>* All fields are required *</b><br /><br />
-				<form method="post" class="pure-form" action="#">
+				<form method="post" class="pure-form" action="/ot-lon-jsp-demo/registration">
 				
 				First Name:<br />
 				<label id="first_name_error" style="display:none; color:#ff0000;">First Name must be in alphabet format only.</label>
