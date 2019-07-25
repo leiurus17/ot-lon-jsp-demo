@@ -14,7 +14,7 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/mmonzon/Documents/workspace-spring-tool-suite-4-4.3.0.RELEASE/ot-lon-jsp-demo/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/mmonzon/Documents/workspace-spring-tool-suite-4-4.3.0.RELEASE/ot-lon-jsp-demo/WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mmonzon/Documents/gh/ot-lon-jsp-demo/ot-lon-jsp-demo/WebContent/WEB-INF/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mmonzon/Documents/gh/ot-lon-jsp-demo/ot-lon-jsp-demo/WebContent/WEB-INF/lib/jstl-api-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
