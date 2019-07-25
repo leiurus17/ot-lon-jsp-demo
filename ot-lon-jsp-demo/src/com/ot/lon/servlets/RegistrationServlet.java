@@ -2,6 +2,7 @@ package com.ot.lon.servlets;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -23,6 +24,12 @@ public class RegistrationServlet extends HttpServlet {
 		Person person = buildPerson(request);
 		
 		registrationService.savePersonToList(person);
+		
+		request.setAttribute("person",  person);
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("pages/registration-successful.jsp");
+		
+		dispatcher.forward(request, response);
 	}
 	
 	private Person buildPerson(HttpServletRequest request) {
