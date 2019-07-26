@@ -5,11 +5,11 @@ function validateField(value, errorMessageFieldName, validationType) {
 	const ALPHA_NUMERIC = "ALPHA_NUMERIC";
 
 	if (validationType === ALPHABET) {
-		showErrorMessageField(/^[a-zA-Z]*$/.test(value), errorMessageFieldName);
+		showErrorMessageField(/^[a-zA-Z ]*$/.test(value), errorMessageFieldName);
 	} else if (validationType === NUMERIC) {
-		showErrorMessageField(/^[0-9]*$/.test(value), errorMessageFieldName);
+		showErrorMessageField(/^[0-9 ]*$/.test(value), errorMessageFieldName);
 	} else if (validationType === ALPHA_NUMERIC) {
-		showErrorMessageField(/^[a-zA-Z0-9]*$/.test(value), errorMessageFieldName);
+		showErrorMessageField(/^[a-zA-Z0-9 ]*$/.test(value), errorMessageFieldName);
 	}
 }
 
