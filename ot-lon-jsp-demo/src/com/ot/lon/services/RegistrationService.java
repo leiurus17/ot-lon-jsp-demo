@@ -18,7 +18,7 @@ public class RegistrationService {
 		BufferedWriter writer = new BufferedWriter(new FileWriter(PATH_TO_FILE, true));
 		
 		// TODO fix this
-		writer.append(person.getFirstName().concat(PIPE)
+		writer.append(PIPE.concat(person.getFirstName()).concat(PIPE)
 				.concat(person.getLastName().concat(PIPE)));
 		
 		writer.append("\n\n");

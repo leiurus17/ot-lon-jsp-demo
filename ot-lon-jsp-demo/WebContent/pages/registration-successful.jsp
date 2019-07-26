@@ -16,16 +16,12 @@
 		    <div class="pure-u-1-3"></div>
 		</div>
 		
-		<br />
-		<br />
-		
 		<div class="pure-g">
 		    <div class="pure-u-1-3"></div>
 		    <div class="pure-u-1-3"><p>The following are the details of your registration.</p></div>
 		    <div class="pure-u-1-3"></div>
 		</div>
-	
-		<br />
+
 		<br />
 		
 		<div class="pure-g">
@@ -72,7 +68,12 @@
 				<%= person.getMobileNumber() %><br />
 				<br />
 				
-			
+				<br />
+				
+				<a class="pure-button-primary pure-button" href="./pages/index.jsp">Register another person</a>
+				
+				<br />
+				<br />
 			</div>
 		    
 		    <div class="pure-u-1-3"></div>
