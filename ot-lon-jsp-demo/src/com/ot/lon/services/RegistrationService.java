@@ -9,13 +9,15 @@ import com.ot.lon.models.Person;
 public class RegistrationService {
 	
 	public static final String PATH_TO_FILE = "C:\\Users\\mmonzon\\Documents\\gh\\ot-lon-jsp-demo\\ot-lon-jsp-demo\\WebContent\\data\\persons.txt";
+	public static final String PIPE = "|";
 	
 	public void savePersonToList(Person person) throws IOException {
 				
 		BufferedWriter writer = new BufferedWriter(new FileWriter(PATH_TO_FILE, true));
 		
 		// TODO fix this
-		writer.append(person.toString());
+		writer.append(person.getFirstName().concat(PIPE)
+				.concat(person.getLastName().concat(PIPE)));
 		
 		writer.append("\n\n");
 		
