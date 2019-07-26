@@ -23,8 +23,9 @@ public class RegistrationServlet extends HttpServlet {
 	private RegistrationService registrationService = new RegistrationService();
 	
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Person person = buildPerson(request);
+		Person person = registrationService.buildPerson(request);
 		
+		// Saving to text file
 		registrationService.savePersonToList(person);
 		
 		request.setAttribute("person",  person);
@@ -34,21 +35,6 @@ public class RegistrationServlet extends HttpServlet {
 		dispatcher.forward(request, response);
 	}
 	
-	private Person buildPerson(HttpServletRequest request) {
-
-		String firstName    = request.getParameter("first_name");
-		String lastName     = request.getParameter("last_name");
-		String birthDate    = request.getParameter("birthdate");
-		String age          = request.getParameter("age");
-		String gender       = request.getParameter("gender");
-		String addressLine1 = request.getParameter("address_line_1");
-		String addressLine2 = request.getParameter("address_line_2");
-		String city         = request.getParameter("city");
-		String country      = request.getParameter("country");
-		String mobileNumber = request.getParameter("mobile_number");
-		
-		return new Person(firstName, lastName, birthDate, age, gender, addressLine1, addressLine2, city, country, mobileNumber);
-	}
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
