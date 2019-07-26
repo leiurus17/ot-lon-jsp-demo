@@ -10,7 +10,10 @@ import com.ot.lon.models.Person;
 
 public class RegistrationService {
 	
-	public static final String PATH_TO_FILE = "C:\\Users\\mmonzon\\Documents\\gh\\ot-lon-jsp-demo\\ot-lon-jsp-demo\\WebContent\\data\\persons.txt";
+	//public static final String PATH_TO_FILE = "C:\\data\\persons.txt";
+	
+	public static final String PATH_TO_FILE = "C:\\data\\persons.txt";
+
 	public static final String PIPE = "|";
 	
 	public void savePersonToList(Person person) throws IOException {
@@ -21,7 +24,7 @@ public class RegistrationService {
 			
 			writer.append(PIPE.concat(person.getFirstName()).concat(PIPE)
 					.concat(person.getLastName().concat(PIPE)));	
-			writer.append("\n\n");
+			writer.append("\n");
 			writer.close();
 		}
 		

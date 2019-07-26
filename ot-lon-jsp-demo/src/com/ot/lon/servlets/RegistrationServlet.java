@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.ot.lon.models.Person;
 import com.ot.lon.services.RegistrationService;
 
-@WebServlet( name = "RegistrationServlet", urlPatterns = "/registration")
+@WebServlet(name = "RegistrationServlet", urlPatterns = "/registration")
 public class RegistrationServlet extends HttpServlet {
 
 	/**
