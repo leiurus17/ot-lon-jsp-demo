@@ -23,15 +23,15 @@ public class RegistrationServlet extends HttpServlet {
 	private RegistrationService registrationService = new RegistrationService();
 	
 	private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		// Build the Person object
 		Person person = registrationService.buildPerson(request);
 		
 		// Saving to text file
 		registrationService.savePersonToList(person);
 		
 		request.setAttribute("person",  person);
-		
 		RequestDispatcher dispatcher = request.getRequestDispatcher("pages/registration-successful.jsp");
-		
 		dispatcher.forward(request, response);
 	}
 	
