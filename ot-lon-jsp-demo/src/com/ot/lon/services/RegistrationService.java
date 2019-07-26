@@ -14,16 +14,18 @@ public class RegistrationService {
 	public static final String PIPE = "|";
 	
 	public void savePersonToList(Person person) throws IOException {
-				
-		BufferedWriter writer = new BufferedWriter(new FileWriter(PATH_TO_FILE, true));
-		
+
 		// TODO fix this
-		writer.append(PIPE.concat(person.getFirstName()).concat(PIPE)
-				.concat(person.getLastName().concat(PIPE)));
+		if (!person.getFirstName().isEmpty()) {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(PATH_TO_FILE, true));
+			
+			writer.append(PIPE.concat(person.getFirstName()).concat(PIPE)
+					.concat(person.getLastName().concat(PIPE)));	
+			writer.append("\n\n");
+			writer.close();
+		}
 		
-		writer.append("\n\n");
 		
-		writer.close();
 		
 	}
 	
