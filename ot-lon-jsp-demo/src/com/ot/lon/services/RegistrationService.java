@@ -4,8 +4,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import javax.servlet.http.HttpServletRequest;
-
 import com.ot.lon.models.Person;
 
 public class RegistrationService {
